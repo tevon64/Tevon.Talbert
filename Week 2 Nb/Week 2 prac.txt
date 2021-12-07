@@ -1,0 +1,80 @@
+package revature.com;
+
+public class Puppy {
+	
+	int age;
+	String color;
+	
+	
+	Puppy(int age, String color)
+	{
+	 this.age = 6;
+	 this.color = "Brown";
+	 
+	 System.out.println(age);
+	 System.out.println(color);
+		
+	}
+	
+
+
+}
+
+
+
+Challenge 2
+
+
+
+
+
+package revature.com;
+
+public class sum {
+
+	
+	int num = 2563;
+	int num2  = 4456;
+	int num3 = 692;
+	int total = num + num2 + num3;
+	 
+
+		
+ public static void main(String [] arg()
+ {
+	 
+	System.out.println(total);
+	 
+}
+	
+	
+	
+	
+	
+}
+
+
+
+Challenge 3
+
+
+
+package revature.com;
+
+public class Absolve {
+	
+	static int val1 = 9;
+	int Value = -54;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(Math.abs(val1));  
+		System.out.println(Math.abs(Value));  
+		
+
+	}
+
+}
+
+
