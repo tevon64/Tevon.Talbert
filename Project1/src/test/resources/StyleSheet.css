@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+
+header {
+    text-align: center;
+    /*We'll use CSS Grid to define easy rows and columns.*/
+    display: grid;
+    /*This creates three columns of equal width.*/
+    grid-template-columns: auto auto auto;
+}
+

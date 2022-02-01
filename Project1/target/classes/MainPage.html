@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+   
+    <title> Welcome Yall </title>
+    <meta charset="UTF-8" />
+    <link href="StyleSheet1.css" rel=" stylesheet" type="text/css">
+    <script type="text/javascript" src="JS.js" defer></script>
+
+    <style>
+        .container {
+            width: 1950px;
+            height: 950px;
+            border: 3px solid black;
+            margin: 0 auto;
+            background-color: wheat;
+            background-image: url(Hil.jpg);
+            background-repeat: repeat;
+        }
+
+        .col {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            float: left;
+            border: 3px solid black;
+            background-image: url(money.jpg);
+            background-size: cover;
+        }
+
+        .col2 {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            float: left;
+            border: 3px solid black;
+            background-image: url(watching.jpg);
+            background-size: cover;
+        }
+
+        .col3 {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            float: left;
+            border: 3px solid black;
+            background-image: url(Past.jpg);
+            background-size: cover;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+
+    <form>
+        <label for='Username'>
+            UserName
+        </label>
+        <input type="text" id="username" size="10" />
+
+        <label for='Password'>
+            Password
+        </label>
+        <input type="text" id="Password" size="10" />
+
+
+    </form>
+
+
+
+
+
+    <div class="container">
+        <div class="col">
+            <form>
+                <div class="formbox">
+                    <label for="Reason">Reason</label>
+                    <input type="text" id="title" placeholder="Title" elementid="Reason" value="null" />
+                </div>
+                <div class="formbox">
+                    <label for="Amount">Amount</label>
+                    <input type="text" id="title" placeholder="Title" elementid="Amount" />
+                </div>
+                <p>Make a new request</p>
+                <button name="btn" type="button"
+                        element id="btn">
+                    Start Request
+                </button>
+                <div id="msg">
+                    <pre></pre>
+                </div>
+            </form>
+        </div>
+        <div class="col2">
+            <p>Check a current request</p>
+            <button name="Secondbutton" type="button">
+                Begin search
+            </button>
+        </div>
+        <div class="col3">
+            <p>Check a Previous request</p>
+            <button name="Thirdbutton" type="button">
+                Search past claims
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        h1 {
+            color: black;
+        }
+    </style>
+
+
+
+    <button name="Firstbutton" type="button">
+        Start
+    </button>
+
+
+
+
+
+    <script>
+        let Requests = [];
+        const addRequest = (ev) => {
+            ev.preventDefault();
+            let Request = {
+                ReDate: Date.now(),
+                Amount: docment.getElementById('Amount').value,
+                Reason: document.getElementById('Reason').value
+            }
+
+            Requests.push(Request);
+            document.forms[0].reset();
+
+            console.warn('added', { request });
+            let pre = document.querySelector('msg pre');
+            pre.textContext = '\n' + JSON.stringify(Requests, '\t', 2);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('btn').addEventListener("click", addRequest);
+            $(document).read
+        });
+    </script>
+    
+
+</body>
+
+
+
+</html>
